@@ -5,6 +5,8 @@
   "type": "module",
   "main": "dist/index.umd.cjs",
   "module": "dist/index.js",
+  "unpkg": "dist/index.umd.cjs",
+  "jsdelivr": "dist/index.umd.cjs",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "vite",
@@ -13,6 +15,16 @@
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": {
+      "import": {
+        "node": "./dist/index.cjs",
+        "default": "./dist/index.js"
+      },
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "keywords": [
     "vue",
     "vue3",
