@@ -5,8 +5,8 @@
   "type": "module",
   "main": "dist/index.umd.cjs",
   "module": "dist/index.js",
-  "unpkg": "dist/index.umd.cjs",
-  "jsdelivr": "dist/index.umd.cjs",
+  "unpkg": "dist/index.iife.js",
+  "jsdelivr": "dist/index.iife.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "vite",
